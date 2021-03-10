@@ -11,7 +11,9 @@ public class UserService {
     DAO dao = new DAO();
     UserHelper userHelper = new UserHelper();
 
-    public void mostrarUsuarios(){
+    public List<Usuario> getListaUsuarios(){
+        return dao.getUsuariosList();
+
 
     }
 

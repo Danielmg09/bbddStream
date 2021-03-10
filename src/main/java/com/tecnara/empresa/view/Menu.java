@@ -97,6 +97,10 @@ public class Menu {
     }
 
     public void mostrarUsuarios(){
+        List<Usuario> listaUsuarios = userService.getListaUsuarios();
+        for (Usuario u:listaUsuarios) {
+            u.printUsuario();
+        }
 
     }
 
